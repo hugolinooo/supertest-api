@@ -33,8 +33,8 @@ https://nodejs.org/
 1. Get the code:
    - Option A - Clone the repository:
    ```bash
-   git clone https://github.com/sumup-challenges/hugopetelin.git
-   cd hugopetelin
+   git clone https://github.com/hugolinooo/supertest-api.git
+   cd supertest-api
    ```
    - Option B - If you received a ZIP file:
    Extract the contents and navigate to the extracted directory.
