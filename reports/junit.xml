@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="17" failures="10" errors="0" time="13.408">
+  <testsuite name="src\tests\accountCreation.test.ts" errors="0" failures="7" skipped="0" timestamp="2025-02-14T00:41:27" time="11.237" tests="12">
+    <testcase classname="Account Creation Tests" name="should successfully create an account with valid data" time="0.888">
+      <failure>Error: expect(received).toMatchObject(expected)
+
+- Expected  - 1
++ Received  + 1
+
+  Object {
+    &quot;date_of_birth&quot;: &quot;1966-02-13&quot;,
+    &quot;first_name&quot;: &quot;urruxM&quot;,
+    &quot;full_name&quot;: &quot;urruxM ZVVVjo&quot;,
+-   &quot;initial_deposit&quot;: 665,
++   &quot;initial_deposit&quot;: 664.99,
+    &quot;last_name&quot;: &quot;ZVVVjo&quot;,
+  }
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:36:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should successfully create an account with no initial deposit" time="0.698">
+      <failure>Error: expect(received).toMatchObject(expected)
+
+- Expected  - 1
++ Received  + 1
+
+  Object {
+    &quot;date_of_birth&quot;: &quot;2000-02-13&quot;,
+    &quot;first_name&quot;: &quot;zykVyK&quot;,
+    &quot;full_name&quot;: &quot;zykVyK axUKRW&quot;,
+-   &quot;initial_deposit&quot;: 0,
++   &quot;initial_deposit&quot;: 272.99,
+    &quot;last_name&quot;: &quot;axUKRW&quot;,
+  }
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:51:27)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation for underage person" time="0.69">
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with future date of birth" time="0.66">
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with invalid name length" time="0.679">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 411
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:91:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with invalid first name" time="0.715">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 200
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:102:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with invalid last name" time="0.316">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 200
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:112:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with empty first name" time="0.711">
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with empty last name" time="0.712">
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject negative initial deposit" time="0.683">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 200
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:142:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with invalid API key" time="0.267">
+    </testcase>
+    <testcase classname="Account Creation Tests" name="should reject account creation with SQL injection attempt" time="0.661">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 411
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountCreation.test.ts:160:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="src\tests\accountRetrieval.test.ts" errors="0" failures="3" skipped="0" timestamp="2025-02-14T00:41:27" time="12.367" tests="5">
+    <testcase classname="Account Retrieval Tests" name="should retrieve account details with IBAN" time="5.643">
+      <failure>Error: expect(received).toMatchObject(expected)
+
+- Expected  - 1
++ Received  + 1
+
+@@ -3,8 +3,8 @@
+    &quot;first_name&quot;: &quot;HEuaAF&quot;,
+    &quot;full_name&quot;: &quot;HEuaAF yZPBsV&quot;,
+    &quot;iban&quot;: &quot;GB63SUPA04145000001331&quot;,
+    &quot;iban_issuance_status&quot;: &quot;SUCCESSFUL&quot;,
+    &quot;id&quot;: 1331,
+-   &quot;initial_deposit&quot;: 644,
++   &quot;initial_deposit&quot;: 643.99,
+    &quot;last_name&quot;: &quot;yZPBsV&quot;,
+  }
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountRetrieval.test.ts:34:21)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Retrieval Tests" name="should handle non-existent account retrieval" time="0.712">
+    </testcase>
+    <testcase classname="Account Retrieval Tests" name="should reject account retrieval with blank ID" time="0.683">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 400
+Received: 404
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountRetrieval.test.ts:58:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Retrieval Tests" name="should reject account retrieval with invalid API key" time="1.366">
+      <failure>Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 403
+Received: 200
+    at Object.&lt;anonymous&gt; (D:\SumUp-Challenge\hugopetelin\src\tests\accountRetrieval.test.ts:66:29)
+    at processTicksAndRejections (node:internal/process/task_queues:95:5)</failure>
+    </testcase>
+    <testcase classname="Account Retrieval Tests" name="should reject account retrieval with SQL injection attempt" time="0.719">
+    </testcase>
+  </testsuite>
+</testsuites>
